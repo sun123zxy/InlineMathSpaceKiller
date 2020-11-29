@@ -58,10 +58,17 @@ int main(int argc,char *argv[]){
 				ofile=ifile;
 			else ofile=argv[2];
 		}
-	}else return 0;
+	}else{
+		printf("Usage: spaceKiller [inputFlie] [outputFile/-o/--overwrite]\n");
+		return 0;
+	}
+	
+	printf("Reading...\n");
 	ReadIn();
+	printf("Analyzing...\n");
 	GetP();
 	Work();
+	printf("Writing...\n");
 	WriteOut();
 	return 0;
 }
