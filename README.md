@@ -1,13 +1,14 @@
 # Inline Math Space Killer
 
-A simple tool which removes spaces near $ in inline-math.
+A simple tool which removes spaces near dollar($) in inline-math.
 
-Maybe useful when using Pandoc to export some non-standard markdown with latex maths.
+Can be useful when using Pandoc to export some non-standard markdown with latex maths.
 
 Should be compiled under `c++11` .
 
 ## Usage
 
-`spaceKiller [inputFlie] [outputFile/-o/--overwrite]`
+`spaceKiller <inputFile> [-o <outputFile>|--overwrite] [--verbose]`
 
-`-o` or `--overwrite` stands for overwriting the input file.
++ `--overwrite`: Overwrite `<inputFile>`
++ `--verbose`: Print more details.
