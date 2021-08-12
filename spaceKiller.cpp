@@ -26,7 +26,6 @@ void GetP(){
 			if(inside){
 				inside=0;
 				if(stk.top()+1!=i){ //ignore display math
-					pN++;
 					lp.push_back(stk.top());
 					rp.push_back(i);
 					if(isVerbose){
@@ -34,6 +33,7 @@ void GetP(){
 						for(int k=stk.top();k<=i;k++) printf("%c",in[k]);
 						printf("\n");
 					}
+					pN++;
 				}
 				stk.pop();
 			}else{
